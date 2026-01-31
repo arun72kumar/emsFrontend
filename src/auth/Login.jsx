@@ -17,7 +17,7 @@ export default function Login() {
     e.preventDefault()
     try {
 
-      const { data } = await axios.post(`https://emsbackend-prfw.onrender.com/api/v1/user/register`, {
+      const { data } = await axios.post(`https://emsbackend-prfw.onrender.com/api/v1/user/login`, {
         email: email,
         password: password
       })

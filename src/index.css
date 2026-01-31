@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gochi+Hand&family=Lobster&family=Oregano:ital@0;1&family=Pacifico&family=Playwrite+HU:wght@100..400&family=Shadows+Into+Light&family=Yellowtail&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --font-inventory: "Pacifico", cursive;
+}

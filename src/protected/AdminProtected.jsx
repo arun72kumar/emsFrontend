@@ -10,7 +10,7 @@ function AdminProtected() {
     const {auth,setAuth} = useAuth()
     useEffect(() => {
         async function authCheck() {
-            const { data } = await axios.get(`http://localhost:8000/api/v1/user/admin-protected`,
+            const { data } = await axios.get(`https://emsbackend-prfw.onrender.com/api/v1/user/admin-protected`,
                 {
                     headers: {
                         Authorization: `Bearer ${auth?.token}`

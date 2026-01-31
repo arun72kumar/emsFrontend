@@ -112,7 +112,7 @@ export default function Supplier() {
 
     async function getSuppliers() {
         try {
-            const { data } = await axios.get(`http://localhost:8000/api/v1/supplier/all`)
+            const { data } = await axios.get(`https://emsbackend-prfw.onrender.com/api/v1/supplier/all`)
             setSuppliers(data?.suppliers)
         } catch (error) {
             console.log(error)

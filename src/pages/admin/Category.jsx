@@ -34,7 +34,7 @@ export default function Category() {
     // handleDelete
     async function handleDelete(_id) {
         try {
-            const { data } = await axios.delete(`/ims/api/v1/category/delete/${_id}`)
+            const { data } = await axios.delete(`https://emsbackend-prfw.onrender.com/api/v1/category/delete/${_id}`)
             if (data?.success) {
                 toast.success(data?.message)
                 getCategories()

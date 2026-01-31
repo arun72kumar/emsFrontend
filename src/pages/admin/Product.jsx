@@ -41,7 +41,7 @@ export default function Product() {
   // get categories
   async function getCategories() {
     try {
-      const { data } = await axios.get(`/ims/api/v1/category/all`)
+      const { data } = await axios.get(`https://emsbackend-prfw.onrender.com/api/v1/category/all`)
       if (data?.success) {
         setCategories(data?.categories)
       }
@@ -53,7 +53,7 @@ export default function Product() {
   // getsupplier
   async function getSuppliers() {
     try {
-      const { data } = await axios.get(`http://localhost:8000/api/v1/supplier/all`)
+      const { data } = await axios.get(`https://emsbackend-prfw.onrender.com/api/v1/supplier/all`)
       setSuppliers(data?.suppliers)
     } catch (error) {
       console.log(error)
@@ -89,7 +89,7 @@ export default function Product() {
     else {
       try {
         // console.log(formData)
-        const { data } = await axios.post(`http://localhost:8000/api/v1/product/add`, formData)
+        const { data } = await axios.post(`https://emsbackend-prfw.onrender.com/api/v1/product/add`, formData)
         // console.log(data)
 
         if (data?.success) {
@@ -121,7 +121,7 @@ export default function Product() {
   // getproducts
   async function getProducts() {
     try {
-      const { data } = await axios.get(`http://localhost:8000/api/v1/product/all`)
+      const { data } = await axios.get(`https://emsbackend-prfw.onrender.com/api/v1/product/all`)
       setProducts(data?.products)
     } catch (error) {
       console.log(error)

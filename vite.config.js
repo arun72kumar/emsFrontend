@@ -12,15 +12,15 @@ export default defineConfig({
     }),
     tailwindcss(), 
   ],
-   server: {
-      proxy: {
-        "^/ims/.*": {
-          target: "https://emsbackend-prfw.onrender.com/",
-          changeOrigin: true,
-          rewrite: path => path.replace(/^\/ims/, "")
-        }
-      }
-    }
+  //  server: {
+  //     proxy: {
+  //       "^/ims/.*": {
+  //         target: "https://emsbackend-prfw.onrender.com/",
+  //         changeOrigin: true,
+  //         rewrite: path => path.replace(/^\/ims/, "")
+  //       }
+  //     }
+  //   }
  
 
 })
